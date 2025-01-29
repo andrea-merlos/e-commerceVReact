@@ -1,32 +1,45 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <section id="header">
+    <header id="header">
       <Link to="/">
         <img src="/images/logo.PNG" alt="logo" className="brand-logo" />
       </Link>
-      <div>
+
+      <div className={`nav-menu ${isOpen ? "open" : ""}`}>
         <ul id="navbar">
           <li>
-            <Link className="active" to="/">
+            <Link className="active" to="/" onClick={() => setIsOpen(false)}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to="/products" onClick={() => setIsOpen(false)}>
+              Products
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>
+              Contact
+            </Link>
           </li>
           <li>
-            <Link to="/cart">
+            <Link to="/cart" onClick={() => setIsOpen(false)}>
               <i className="fa-solid fa-bag-shopping"></i>
             </Link>
           </li>
         </ul>
       </div>
-    </section>
+
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <i className={isOpen ? "fa-solid fa-times" : "fa-solid fa-bars"}></i>
+      </div>
+    </header>
   );
 };
 

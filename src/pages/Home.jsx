@@ -14,7 +14,7 @@ const Home = ({ data }) => {
         <div className="promo-text-box">
           <h2>Get Your Gifts For Valentine's Day</h2>
           <p>Order by 02/09 for delivery before 02/14!</p>
-          <Link to="/product-page" className="promo-link">
+          <Link to="/products" className="promo-link">
             Shop Now
           </Link>
         </div>

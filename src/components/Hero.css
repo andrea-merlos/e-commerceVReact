@@ -1,6 +1,4 @@
-/* src/components/HeroSection.css */
-.hero {
-  background-image: url("path-to-your-image.jpg");
+/* .hero {
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -21,4 +19,4 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
-}
+} */
