@@ -20,6 +20,21 @@ const Home = ({ data }) => {
         </div>
       </div>
       <FeaturedProducts />
+      <div className="video-text-container">
+        <div className="text-wrapper">
+          <h2>Most Celebrated Power Pumps</h2>
+          <p>
+            STYLE Instantly identifiable for their inimitable beauty and
+            uncompromising quality, discover andrea's most iconic shoe styles
+          </p>
+        </div>
+        <div className="video-wrapper">
+          <video controls>
+            <source src="/VIDEO.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
       <Newsletter />
     </div>
   );

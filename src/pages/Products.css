@@ -1,9 +1,9 @@
 .hero-s {
   position: relative;
-  background-image: url("/dist/images/officeShoes.avif"); /* Update with your image path */
+  background-image: url("/dist/images/officeShoes.avif");
   background-size: cover;
   background-position: center;
-  height: 50vh; /* Adjust height as needed */
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +97,8 @@ p {
 .filter-container select {
   padding: 10px 15px;
   font-size: 1rem;
-  color: #333;
-  border: 1px solid #ddd;
+  color: #000000;
+  border: 1px solid #461235;
   border-radius: 5px;
   background-color: white;
   cursor: pointer;
@@ -107,7 +107,7 @@ p {
 
 .filter-container select:hover {
   border-color: #150907;
-  background-color: #b3b3b879;
+  background-color: #fbc8e4ed;
 }
 
 .filter-container select:focus {

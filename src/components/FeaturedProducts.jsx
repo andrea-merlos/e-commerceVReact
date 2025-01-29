@@ -19,7 +19,7 @@ const FeaturedProducts = () => {
       </div>
       <div className="fe-box">
         <img src="/images/time.avif" className="image1" alt="" />
-        <h6>Support</h6>
+        <h6>24/7 Support</h6>
       </div>
       <div className="fe-box">
         <img src="/images/pink.avif" className="image1" alt="" />

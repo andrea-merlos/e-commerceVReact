@@ -659,3 +659,50 @@ footer .copyright {
     transform: rotate(360deg);
   }
 }
+
+.video-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 0;
+  align-items: center;
+}
+
+.video-wrapper,
+.text-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.video-wrapper video {
+  width: 98%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-wrapper h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text-wrapper p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .video-text-container {
+    flex-direction: column;
+  }
+
+  .text-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .text-wrapper p {
+    font-size: 14px;
+  }
+}
