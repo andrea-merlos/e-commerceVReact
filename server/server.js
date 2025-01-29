@@ -22,6 +22,7 @@ const db = mysql.createConnection({
   password: process.env.STACKHERO_MYSQL_PASSWORD,
   database: process.env.DB_NAME,
   port: process.env.DB_PORT || 3306,
+  ssl: { rejectUnauthorized: true },
 });
 
 // Get the directory name of the current module
