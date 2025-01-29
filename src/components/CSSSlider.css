@@ -1,7 +1,6 @@
 .slider-wrapper {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
   padding: 20px;
 }
 
@@ -98,4 +97,37 @@
   .slide-content p {
     font-size: 1rem;
   }
+}
+.slider-promo-container {
+  display: flex;
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  gap: 20px; /* Space between slider and text box */
+  margin: 20px 0;
+  flex-wrap: wrap; /* Allows children to wrap on smaller screens */
+}
+
+.promo-text-box {
+  width: 578px;
+  height: 400px;
+  padding-top: 80px;
+  margin: 10px;
+  background-color: #ffecf9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.promo-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffa6e3; /* Button color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.promo-link:hover {
+  background-color: #ff4c3b; /* Darker shade for hover effect */
 }
