@@ -17,10 +17,11 @@ const app = express();
 // );
 
 const db = mysql.createConnection({
-  host: process.env.STACKHERO_MYSQL_DATABASE_URL,
+  host: process.env.STACKHERO_MYSQL_HOST,
   user: process.env.STACKHERO_MYSQL_USER,
   password: process.env.STACKHERO_MYSQL_PASSWORD,
   database: process.env.DB_NAME,
+  port: process.env.DB_PORT || 3306,
 });
 
 // Get the directory name of the current module
