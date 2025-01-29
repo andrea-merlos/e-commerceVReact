@@ -2,7 +2,6 @@ import express from "express";
 import mysql from "mysql2";
 import cors from "cors";
 import dotenv from "dotenv";
-import path from "path";
 
 dotenv.config();
 
@@ -21,12 +20,6 @@ const db = mysql.createConnection({
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
 });
-
-// Resolve the path to the 'dist' directory
-const distPath = path.resolve(__dirname, "../../dist");
-
-// Serve static files from the 'dist' directory
-app.use(express.static(distPath));
 
 // Example route
 app.get("/", (req, res) => {
