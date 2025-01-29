@@ -33,7 +33,7 @@ h6 {
 
 p {
   font-size: 19px;
-  color: rgb(181, 28, 51);
+  color: #ffa6e3;
   margin: 15px 0 20px 0;
   font-weight: bold;
 }
@@ -440,7 +440,11 @@ footer h4 {
 footer p {
   font-size: 15px;
   margin: 0 0 8px 0;
-  color: rgb(1, 1, 1);
+  color: rgb(0, 0, 0);
+}
+
+.copyright p {
+  color: #ea7cc7;
 }
 
 footer a {
@@ -459,6 +463,7 @@ footer .icon a {
   margin-top: 4px;
   color: rgb(0, 0, 0);
   font-size: 3rem;
+  margin-right: 10px;
 }
 
 footer i:hover {
@@ -471,6 +476,50 @@ footer .copyright {
   text-align: center;
 }
 
+/* Media Queries */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .col {
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .icon {
+    justify-content: center;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  footer {
+    padding: 10px;
+  }
+
+  footer h4 {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 14px;
+  }
+
+  footer .icon a {
+    font-size: 1.2rem;
+  }
+
+  footer .copyright {
+    font-size: 12px;
+  }
+}
+/* container section ************* */
 .container {
   display: flex;
   justify-content: center;
@@ -553,8 +602,6 @@ footer .copyright {
   background-color: #ffffff;
   color: #ffa6e3;
 }
-
-/* 🔹 RESPONSIVE DESIGN */
 
 /* Tablets */
 @media screen and (max-width: 768px) {

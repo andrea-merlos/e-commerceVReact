@@ -73,6 +73,7 @@ p {
   background-color: #f8f9fa;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
 .filter-container select {
@@ -96,18 +97,48 @@ p {
   border-color: #090b0c;
   box-shadow: 0 0 5px rgba(15, 15, 16, 0.5);
 }
+@media (max-width: 600px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
+  .filter-container select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .filter-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .filter-container select {
+    flex: 1 1 45%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .filter-container {
+    justify-content: center;
+  }
+
+  .filter-container select {
+    flex: none;
+    margin-bottom: 0;
+  }
+}
+/* ****************************************************************** */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(250px, 1fr)
-  ); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   padding: 20px;
 }
 
-/* Product card */
 .product-card {
   padding: 15px;
   border: 1px solid #ddd;
@@ -126,11 +157,10 @@ p {
 }
 
 .product-card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
+  transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(62, 1, 1, 0.518);
 }
 
-/* Product list title */
 .product_list {
   text-align: center;
   font-size: 1.5rem;
