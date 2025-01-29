@@ -473,100 +473,133 @@ footer .copyright {
 
 .container {
   display: flex;
-  justify-content: left;
-  padding-left: 20%;
+  justify-content: center;
   align-items: center;
-  background-image: url("../images/contactbackground_Deblur.jpg");
+  background-image: url("../images/newContact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.69;
   height: 90vh;
   width: 100%;
+  padding: 20px;
 }
+
 .container form {
-  width: 700px;
-  height: 700px;
-  border-style: solid;
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+  border: 2px solid #e793dd;
   display: flex;
-  background-color: rgb(17, 17, 16);
-  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgba(115, 77, 94, 0.386);
   justify-content: center;
+  align-items: center;
   border-radius: 1rem;
+  padding: 20px;
 }
 
 .container form h1 {
-  color: rgb(200, 24, 24);
+  color: rgb(0, 0, 0);
   font-weight: 700;
-  line-height: 2;
-  margin-top: 30px;
-  width: 500px;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.container form input {
-  width: 300px;
+.container form input,
+.container form textarea {
+  width: 100%;
+  max-width: 600px;
   height: 50px;
   padding-left: 10px;
   outline: none;
   border: none;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
   background: none;
-  border-bottom: 2px solid rgb(200, 24, 24);
-  color: rgb(250, 246, 246);
+  border-bottom: 2px solid#ffa6e3;
+  color: rgb(0, 0, 0);
 }
-.container form input::placeholder {
+
+.container form textarea {
+  min-height: 100px;
+  resize: none;
+  padding: 10px;
+}
+
+.container form input::placeholder,
+.container form textarea::placeholder {
   color: rgb(245, 238, 238);
 }
+
 .container form #lastName,
 .container form #phone {
-  margin-left: 20px;
-}
-
-.container form h4 {
-  color: rgb(248, 241, 241);
-  font-weight: 300;
-  width: 600px;
-  margin-top: 20px;
-}
-.container form textarea {
-  background: none;
-  border: none;
-  border-bottom: 2px solid rgb(200, 24, 24);
-  color: rgb(247, 239, 239);
-  font-weight: 200;
-  font-size: 20px;
-  padding: 10px;
-  outline: none;
-  min-height: 90px;
-  max-height: 90px;
-  min-width: 620px;
-  max-width: 620px;
-}
-
-.container form h4 {
-  font-size: 20px;
+  margin-left: 0;
 }
 
 .container form #button {
-  border: none;
-  background: linear-gradient(to right, rgb(216, 11, 11), rgb(85, 5, 5));
-  border-radius: 5px;
   margin-top: 20px;
-  font-weight: 600px;
-  font-size: 24px;
-  color: white;
-  width: 150px;
-  height: 60px;
-  text-align: center;
-  transition: 0.3s;
+  padding: 12px 24px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffecf9;
+  background-color: #ffa6e3;
+  border: none;
+  border-radius: 8rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container form #button:hover {
-  background: linear-gradient(to right, rgb(222, 42, 42), rgb(249, 247, 247));
+  background-color: #ffffff;
   color: #ffa6e3;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-  padding: 20px;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+    height: auto;
+  }
+
+  .container form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .container form input,
+  .container form textarea {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .container form h1 {
+    font-size: 24px;
+  }
+
+  .container form input,
+  .container form textarea {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .container form #button {
+    width: 100%;
+  }
 }
 
 @keyframes logo-spin {
