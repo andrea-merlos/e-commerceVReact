@@ -30,7 +30,7 @@ app.use(express.static(distPath));
 
 // Example route
 app.get("/", (req, res) => {
-  res.sendFile(path.join(distPath, "index.html"));
+  res.send("heyo");
 });
 
 app.get("/products", (req, res) => {
