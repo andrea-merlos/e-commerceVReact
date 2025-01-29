@@ -5,13 +5,13 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    methods: "GET,POST,PUT,DELETE",
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: "http://localhost:5173",
+//     methods: "GET,POST,PUT,DELETE",
+//     credentials: true,
+//   })
+// );
 
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
