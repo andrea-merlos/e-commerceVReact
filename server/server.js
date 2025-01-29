@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
   res.send("heyo");
 });
 
-app.get("/products", (req, res) => {
+app.get("/api/products", (req, res) => {
   const sql = "SELECT * FROM products";
   db.query(sql, (err, data) => {
     if (err) return res.json(err);

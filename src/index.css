@@ -435,29 +435,29 @@ footer h4 {
 footer p {
   font-size: 15px;
   margin: 0 0 8px 0;
-  color: white;
+  color: rgb(1, 1, 1);
 }
 
 footer a {
   font-size: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   margin-bottom: 15px;
   font-weight: 600;
 }
 footer a:hover {
-  color: rgb(10, 10, 10);
+  color: #ffa6e3;
   transition: 0.3s ease-in-out;
 }
 
 footer .icon a {
   margin-top: 4px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 3rem;
 }
 
 footer i:hover {
-  color: rgb(10, 10, 10);
+  color: #ffa6e3;
   transition: 0.3s ease-in-out;
 }
 
@@ -558,7 +558,7 @@ footer .copyright {
 
 .container form #button:hover {
   background: linear-gradient(to right, rgb(222, 42, 42), rgb(249, 247, 247));
-  color: black;
+  color: #ffa6e3;
   transition: 0.3s ease-in-out;
   cursor: pointer;
   padding: 20px;
