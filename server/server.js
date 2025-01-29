@@ -57,3 +57,6 @@ db.connect((err) => {
     console.log("Database connected successfully!");
   }
 });
+app.get("*", (req, res) => {
+  res.sendFile(path.join(distPath, "index.html"));
+});
