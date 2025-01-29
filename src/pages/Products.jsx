@@ -33,6 +33,16 @@ function Products({ products = [] }) {
 
   return (
     <>
+      {/* Hero Section */}
+      <div className="hero-s">
+        <div className="hero-text">
+          <h1>Welcome to Our Product Page</h1>
+          <p>Discover our exclusive collection tailored just for you.</p>
+        </div>
+      </div>
+
+      {/* return (
+    <> */}
       <div className="filter-container">
         <select
           name="color"
@@ -73,7 +83,7 @@ function Products({ products = [] }) {
         </select>
       </div>
 
-      <div className="product_list">Products</div>
+      <div className="product_list"></div>
       {filteredProducts.length > 0 ? (
         <div className="product-grid">
           {filteredProducts.map((product, index) => (

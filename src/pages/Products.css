@@ -1,3 +1,21 @@
+.hero-s {
+  position: relative;
+  background-image: url("/dist/images/officeShoes.avif"); /* Update with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 50vh; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #f8f9fa;
+}
+
 .product_list {
   font-size: 2rem;
   font-weight: bold;
