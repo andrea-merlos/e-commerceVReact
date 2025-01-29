@@ -21,7 +21,7 @@ const db = mysql.createConnection({
   user: process.env.STACKHERO_MYSQL_USER,
   password: process.env.STACKHERO_MYSQL_PASSWORD,
   database: process.env.DB_NAME,
-  port: process.env.DB_PORT || 3306,
+  port: process.env.STACKHERO_MYSQL_PORT || 3306,
   ssl: { rejectUnauthorized: true },
 });
 
