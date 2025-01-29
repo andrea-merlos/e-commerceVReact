@@ -128,7 +128,7 @@ body {
 }
 /****************************************************** Home Page Start ***************************************/
 #hero {
-  background-image: url(/images/Heels.jpg);
+  background-image: url("../images/Heels.jpg");
   background-repeat: no-repeat;
   height: 90vh;
   width: 100%;
@@ -471,7 +471,7 @@ footer .copyright {
   justify-content: left;
   padding-left: 20%;
   align-items: center;
-  background-image: url(images/contactbackground_Deblur.jpg);
+  background-image: url("../images/contactbackground_Deblur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.69;
