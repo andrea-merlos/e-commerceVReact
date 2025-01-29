@@ -30,7 +30,7 @@ const Home = ({ data }) => {
         </div>
         <div className="video-wrapper">
           <video controls autoplay muted loop>
-            <source src="/dist/images/VIDEO.mp4" type="video/mp4" />
+            <source src="/public/images/VIDEO.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
