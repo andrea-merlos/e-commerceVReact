@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node server.js",
-    "startserver": "node server/server.js"
+    "start": "node server/server.js"
   },
   "dependencies": {
     "axios": "^1.7.9",
