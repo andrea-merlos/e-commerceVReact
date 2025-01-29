@@ -1,6 +1,6 @@
 .hero-s {
   position: relative;
-  background-image: url("/dist/images/officeShoes.avif");
+  background-image: url("/images/officeShoes.avif");
   background-size: cover;
   background-position: center;
   height: 50vh;
