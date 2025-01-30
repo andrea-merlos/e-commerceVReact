@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="section-p1">
       <div className="col">
-        <img src="/images/logo.PNG" className="brand-logo" alt="logo" />
+        <img src="/images/logo.PNG" className="brand-Logo" alt="logo" />
         <h4>Contact</h4>
         <p>
           <strong>Address:</strong> 8888 Brakeman Dr Waxhaw, NC 28173

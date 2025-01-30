@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <header id="header">
       <Link to="/">
-        <img src="/images/logo.PNG" alt="logo" className="brand-logo" />
+        <img src="/images/logo.PNG" alt="logo" className="brand-Logo" />
       </Link>
 
       <div className={`nav-menu ${isOpen ? "open" : ""}`}>

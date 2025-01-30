@@ -71,7 +71,7 @@ body {
   width: 100%;
 }
 
-.brand-logo {
+.brand-Logo {
   width: 7rem;
   height: 7rem;
   border-radius: 5rem;
@@ -154,7 +154,12 @@ body {
     text-align: center;
     transition: 0.3s ease-in-out;
   }
-
+  .fa-bars::before {
+    margin-left: 11rem;
+  }
+  .fa-solid.fa-times::before {
+    margin-left: 12rem;
+  }
   .nav-menu.open {
     left: 0;
     top: 155px;
@@ -162,7 +167,8 @@ body {
 
   #navbar {
     flex-direction: column;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    margin-left: 19rem;
   }
 
   #navbar li {
@@ -214,6 +220,41 @@ body {
     background: url("../images/HeroMedia.webp") no-repeat center center/cover;
     height: 75vh;
   }
+  .hero-section h4 {
+    font-size: 18px;
+  }
+
+  .hero-section h2 {
+    font-size: 24px;
+  }
+
+  .hero-section h1 {
+    font-size: 32px;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+  }
+}
+
+/* 🔹 Tablet */
+@media screen and (max-width: 1024px) {
+  .hero-section h4 {
+    font-size: 20px;
+    margin-top: 4rem;
+  }
+
+  .hero-section h2 {
+    font-size: 28px;
+  }
+
+  .hero-section h1 {
+    font-size: 40px;
+  }
+
+  .hero-section p {
+    font-size: 15px;
+  }
 }
 /************************* Start of features ************************************************ */
 #feature {
@@ -221,14 +262,15 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 1rem;
 }
 
 #feature .fe-box {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgb(53, 13, 13);
-  border: 1px solid rgb(6, 6, 6);
+  /* box-shadow: 20px 20px 34px rgb(53, 13, 13); */
+  border: 1px solid rgb(255, 155, 225);
   border-radius: 37px;
   margin: 15px 0;
 }
@@ -368,7 +410,6 @@ body {
   flex-wrap: wrap;
   align-items: center;
   background-color: rgba(239, 236, 237, 0.833);
-  padding: 14px 20px 14px 25px;
 }
 
 #newsletter h4 {
@@ -393,13 +434,14 @@ body {
 
 #newsletter input {
   height: 3.126rem;
-  width: 90%;
+  width: 100%;
   padding: 0 1.25em;
   border: 1px solid transparent;
   border-radius: 4px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   outline: none;
+  font-size: 16px;
 }
 
 #newsletter button {
@@ -411,6 +453,8 @@ body {
   font-weight: bold;
   font-size: 15px;
   border: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 #newsletter button:hover {
@@ -430,7 +474,7 @@ footer .col {
   align-items: flex-start;
   margin-bottom: 1px;
 }
-footer .brand-logo {
+footer .brand-Logo {
   margin-bottom: 30px;
 }
 
@@ -494,6 +538,55 @@ footer .copyright {
 
   footer .icon {
     justify-content: center;
+  }
+  #newsletter {
+    padding: 30px 15px;
+  }
+
+  #newsletter h4 {
+    font-size: 20px;
+  }
+
+  #newsletter p {
+    font-size: 16px;
+  }
+
+  #newsletter .form {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #newsletter input {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  #newsletter button {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #newsletter {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  #newsletter .form {
+    width: 60%;
+    min-width: 320px;
+    margin-top: 15px;
+  }
+
+  #newsletter h4 {
+    font-size: 22px;
+  }
+
+  #newsletter p {
+    font-size: 17px;
   }
 }
 

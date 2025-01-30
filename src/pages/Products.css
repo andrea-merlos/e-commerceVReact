@@ -15,7 +15,9 @@
   margin-bottom: 0.5rem;
   color: #f8f9fa;
 }
-
+.hero-text p {
+  color: aliceblue;
+}
 .product_list {
   font-size: 2rem;
   font-weight: bold;
@@ -124,6 +126,10 @@ p {
   .filter-container select {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .hero-s {
+    height: auto;
+    background-image: url("/images/officeShoes.avif");
   }
 }
 @media (min-width: 601px) and (max-width: 1024px) {

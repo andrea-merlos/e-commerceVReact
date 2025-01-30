@@ -5,6 +5,7 @@ import CSSSlider from "../components/CSSSlider";
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Home = ({ data }) => {
   return (
     <div>
@@ -35,6 +36,7 @@ const Home = ({ data }) => {
           </video>
         </div>
       </div>
+    
       <Newsletter />
     </div>
   );
