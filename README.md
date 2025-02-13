@@ -4,15 +4,15 @@
 
 Welcome to Andrea's E-Commerce Application! This platform is designed to provide a seamless shopping experience for customers looking to purchase stylish and trendy high heels. My application offers a wide range of products and user-friendly navigation. For my application I used:
 
-✅React: Utilized for building the user interface
+✅ React: Utilized for building the user interface
 
-✅useState Hook: Manages the state of the selected filters
+✅ useState Hook: Manages the state of the selected filters
 
-✅Event Handling: Updates filter state based on user selections
+✅ Event Handling: Updates filter state based on user selections
 
-✅Controlled Components: Dropdowns reflect the current filter state
+✅ Controlled Components: Dropdowns reflect the current filter state
 
-✅Array Filtering: Uses JavaScript's filter method to display matching products
+✅ Array Filtering: Uses JavaScript's filter method to display matching products
 
 1️⃣ Product Catalog
 -Extensive collection of high heels in various styles, colors, and sizes
