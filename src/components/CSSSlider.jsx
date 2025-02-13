@@ -6,13 +6,16 @@ const CSSSlider = ({ products = [] }) => {
   const sliderProducts = products.slice(-4);
 
   useEffect(() => {
+    //hook runs code after change
     const timer = setInterval(() => {
-      setCurrentSlide((prevSlide) =>
-        prevSlide === sliderProducts.length - 1 ? 0 : prevSlide + 1
+      //sets timer
+      setCurrentSlide(
+        (prevSlide) =>
+          prevSlide === sliderProducts.length - 1 ? 0 : prevSlide + 1 //resets or incriments lide
       );
     }, 3000);
 
-    return () => clearInterval(timer);
+    return () => clearInterval(timer); // line returns a cleanup function when re-runs
   }, [sliderProducts.length]);
 
   return (
@@ -22,6 +25,7 @@ const CSSSlider = ({ products = [] }) => {
           className="slides"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
+          // maps over array to create slide for each product
           {sliderProducts.map((product, index) => (
             <div key={`slide${index}`} className="slide">
               <img src={product.image_url} alt={product.title} />
@@ -31,7 +35,7 @@ const CSSSlider = ({ products = [] }) => {
             </div>
           ))}
         </div>
-
+        {/* craetes section to create navigation dots  */}
         <div className="navigation">
           {sliderProducts.map((_, index) => (
             <button

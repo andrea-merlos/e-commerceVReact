@@ -6,7 +6,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-const Home = ({ data }) => {
+const Home = ({ data }) => { //promt called data
   return (
     <div>
       <Hero />

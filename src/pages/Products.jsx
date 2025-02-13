@@ -9,14 +9,16 @@ function Products({ products = [] }) {
   });
 
   const handleFilterChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target; //the input element that triggered the change
     setFilters((prevFilters) => ({
+      //allows component to dynamically updatethe filters based on inputs
       ...prevFilters,
       [name]: value,
     }));
   };
 
   const filteredProducts = products.filter((product) => {
+    //only includes products that match the selected filters.
     const matchesColor =
       filters.color === "" ||
       product.color?.toLowerCase() === filters.color.toLowerCase();
@@ -86,6 +88,8 @@ function Products({ products = [] }) {
       <div className="product_list"></div>
       {filteredProducts.length > 0 ? (
         <div className="product-grid">
+          {" "}
+          {/* will contain all the product cards. */}
           {filteredProducts.map((product, index) => (
             <div key={index} className="product-card">
               <img src={product.image_url} alt={product.title} />

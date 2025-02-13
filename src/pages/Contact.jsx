@@ -10,15 +10,18 @@ const Contact = () => {
     comments: "",
   });
   const [errors, setErrors] = useState({});
+  // error messages
 
   const handleInputChange = (e) => {
-    const { id, value } = e.target;
+    const { id, value } = e.target; //target
     setFormValues((prevValues) => ({
       ...prevValues,
       [id]: value,
     }));
   };
+  // input fields change
 
+  //This function checks the values in formValues to ensure they meet certain criteria
   const validate = () => {
     const newErrors = {};
 
@@ -47,23 +50,24 @@ const Contact = () => {
       newErrors.comments = "Comments are required.";
     }
 
-    setErrors(newErrors);
+    setErrors(newErrors); //checks errors
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); //process without reloading
     if (validate()) {
       console.log("Form submitted:", formValues);
       alert("Form submitted successfully!");
       setFormValues({
+        // clears inputs
         firstName: "",
         lastName: "",
         email: "",
         phone: "",
         comments: "",
       });
-      setErrors({});
+      setErrors({}); //removes error messages after successful submission
     }
   };
 
