@@ -28,5 +28,7 @@ Welcome to Andrea's E-Commerce Application! This platform is designed to provide
 ## Technology Stack 👾
 
 Frontend: React + Vite, Javascript and CSS
+
 Backend: Node.js with Express
+
 Database: MySQL
